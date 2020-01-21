@@ -1,0 +1,15 @@
+.masthead {
+  height: 610px;
+  min-height: 500px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Moonfromoakland04052006.jpg/1200px-Moonfromoakland04052006.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.font-h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 70px;
+  line-height: 90px;
+  color: #fff;
+}
