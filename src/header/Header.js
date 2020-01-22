@@ -8,7 +8,7 @@ const Header = props => {
       className={`navbar navbar-expand-lg navbar-light fixed-top ${props.className}`}
     >
       <div className="container">
-        <a className="navbar-brand js-scroll-trigger text-white" href="#page-top">
+        <a className="navbar-brand js-scroll-trigger" href="#page-top">
           Dalcy Fabrício
         </a>
         <button
@@ -27,18 +27,18 @@ const Header = props => {
       <div className="collapse navbar-collapse" id="navbarResponsive">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <a className="nav-link js-scroll-trigger text-white" href="#about">
-              Sobre
+            <a className="nav-link js-scroll-trigger" href="#about">
+              About
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link js-scroll-trigger" href="#projects">
-              Projetos
+              Project
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link js-scroll-trigger" href="#signup">
-              Contato
+              Contact
             </a>
           </li>
         </ul>
