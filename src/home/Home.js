@@ -32,7 +32,7 @@ export default class Home extends React.Component {
               </ReactWOW>
             </div>
             <div className="col-lg-6 terminal">
-              <ReactWOW animation="fadeIn">
+              <ReactWOW animation="fadeIn" delay="1s">
                 <div>
                   <Terminal data={this.state.phrase} />
                 </div>
