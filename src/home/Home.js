@@ -27,7 +27,7 @@ export default class Home extends React.Component {
               </ReactWOW>
               <ReactWOW animation="slideInLeft" delay="0.5s">
                 <p className="lead">
-                  Beginner in programming and aspiring swimmer
+                  Beginner Front End Developer and The Simpsons fan
                 </p>
               </ReactWOW>
             </div>
