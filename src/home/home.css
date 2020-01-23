@@ -10,3 +10,16 @@ p.font-title {
   color: #000;
   line-height: 60px;
 }
+
+@media only screen and (max-width: 1000px) {
+  div.title {
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .terminal {
+    display: none;
+  }
+}

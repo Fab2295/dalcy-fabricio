@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Header from "./header/Header";
 import Home from "./home/Home";
+import About from "./about/About.js";
 
 class App extends React.Component {
   constructor() {
@@ -40,6 +41,7 @@ class App extends React.Component {
       <div className="app">
         <Header className={this.state.className} />
         <Home />
+        <About />
       </div>
     );
   }
