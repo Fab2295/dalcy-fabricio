@@ -18,11 +18,9 @@ class App extends React.Component {
   componentDidMount() {
     window.addEventListener("scroll", this.handleScrollTop, false);
 
-    setTimeout(() => {
-      this.setState(prevState => ({
-        isLoading: !prevState.isLoading
-      }));
-    }, 1000);
+    this.setState(prevState => ({
+      isLoading: !prevState.isLoading
+    }));
   }
 
   componentWillUnmount() {
