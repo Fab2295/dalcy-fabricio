@@ -5,10 +5,11 @@ import Home from "./home/Home";
 import About from "./about/About.js";
 
 class App extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      className: ""
+      className: "",
+      isLoading: true
     };
 
     this.handleScrollTop = this.handleScrollTop.bind(this);
@@ -16,6 +17,12 @@ class App extends React.Component {
 
   componentDidMount() {
     window.addEventListener("scroll", this.handleScrollTop, false);
+
+    setTimeout(() => {
+      this.setState(prevState => ({
+        isLoading: !prevState.isLoading
+      }));
+    }, 1000);
   }
 
   componentWillUnmount() {
@@ -37,7 +44,9 @@ class App extends React.Component {
   }
 
   render() {
-    return (
+    return this.state.isLoading ? (
+      <p>Carregando</p>
+    ) : (
       <div className="app">
         <Header className={this.state.className} />
         <Home />
