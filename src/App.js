@@ -1,8 +1,9 @@
 import React from "react";
 import "./App.css";
-import Header from "./header/Header";
-import Home from "./home/Home";
-import About from "./about/About.js";
+import Header from "./Components/header/Header";
+import Home from "./Components/home/Home";
+import About from "./Components/about/About.js";
+import Project from "./Components/project/Project";
 
 class App extends React.Component {
   constructor(props) {
@@ -49,6 +50,7 @@ class App extends React.Component {
         <Header className={this.state.className} />
         <Home />
         <About />
+        <Project />
       </div>
     );
   }

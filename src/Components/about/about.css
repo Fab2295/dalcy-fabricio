@@ -1,0 +1,9 @@
+.about {
+  height: 450px;
+  background-color: #ffd920;
+}
+
+#text {
+  text-align: justify;
+  text-justify: inter-word; 
+}
