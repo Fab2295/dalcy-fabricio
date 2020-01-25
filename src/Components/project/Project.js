@@ -14,7 +14,7 @@ export default function Project() {
       await apiGithub
         .get("users/Fab2295/repos")
         .then(response => {
-          setLoading(!isLoading);
+          setLoading(false);
           setUser(response.data);
         })
         .catch(error => {
@@ -30,10 +30,10 @@ export default function Project() {
     <div className="project">
       <div className="container h-100">
         <div className="row h-100 align-items-center text-center">
-          <div className="col-sm-4">
+          <div className="col-lg-4">
             <h1 className="text-center title">My Projects</h1>
           </div>
-          <div className="col-sm-8">
+          <div className="col-lg">
             {isLoading === false && user.length > 0 ? (
               <Card data={user} />
             ) : (
