@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import apiGithub from "../../Services/api";
-import Card from "./card/Card";
+import ListCard from "./listCards/ListCard";
 import ConsoleLog from "../../helper/ConsoleHelper";
 
 import "./project.css";
@@ -35,7 +35,7 @@ export default function Project() {
           </div>
           <div className="col-lg">
             {isLoading === false && user.length > 0 ? (
-              <Card data={user} />
+              <ListCard data={user} />
             ) : (
               <p>loading...</p>
             )}
