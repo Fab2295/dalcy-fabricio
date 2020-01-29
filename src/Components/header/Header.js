@@ -1,5 +1,5 @@
 import React from "react";
-
+import FaIconPack from "react-icons/lib/fa/align-left";
 import "./header.css";
 
 const Header = props => {
@@ -17,8 +17,7 @@ const Header = props => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          Menu
-          <i className="fas fa-bars"></i>
+          <FaIconPack />
         </button>
       </div>
       <div className="collapse navbar-collapse" id="navbarResponsive">

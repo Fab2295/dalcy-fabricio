@@ -4,6 +4,7 @@ import Header from "./Components/header/Header";
 import Home from "./Components/home/Home";
 import About from "./Components/about/About.js";
 import Project from "./Components/project/Project";
+// import Contact from "./Components/contact/Contact";
 
 class App extends React.Component {
   constructor(props) {
