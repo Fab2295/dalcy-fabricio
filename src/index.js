@@ -1,11 +1,14 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "./index.css";
-import App from "./App";
-import * as serviceWorker from "./serviceWorker";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+const App = lazy(() => import("./App"));
 
-serviceWorker.unregister();
+ReactDOM.render(
+  <Suspense fallback={<p>Loading...</p>}>
+    <App />
+  </Suspense>,
+  document.getElementById("root")
+);

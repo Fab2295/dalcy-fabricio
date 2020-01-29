@@ -11,7 +11,7 @@ export default class Home extends React.Component {
 
     this.state = {
       phrase: [
-        "$ cd dalcy-fabricio\n`$dalcy-fabricio>` npm start\n\n`<span style='font-size:20px'>Hi. I'm <span style='color: red'>Dalcy Fabrício</span><span id='animation'>...</span></span>`"
+        "$ cd dalcy-fabricio\n`$dalcy-fabricio>` npm start^1000\n`<span style='font-size:20px'>Hi. I'm <span style='color: red'>Dalcy Fabrício</span><span id='animation'>...</span></span>`"
       ]
     };
   }
@@ -22,21 +22,13 @@ export default class Home extends React.Component {
         <div className="container h-100">
           <div className="row h-100 align-items-center">
             <div className="col-lg-6 title">
-              <ReactWOW animation="slideInLeft">
-                <p className="font-title">Welcome to my World</p>
-              </ReactWOW>
-              <ReactWOW animation="slideInLeft" delay="0.2s">
-                <p className="lead">
-                  Beginner Front End Developer and The Simpsons fan
-                </p>
-              </ReactWOW>
+              <p className="font-title">Welcome to my World</p>
+              <p className="lead">
+                Beginner Front End Developer and The Simpsons fan
+              </p>
             </div>
             <div className="col-lg-6 terminal">
-              <ReactWOW animation="fadeIn" delay="1s">
-                <div>
-                  <Terminal data={this.state.phrase} />
-                </div>
-              </ReactWOW>
+              <Terminal data={this.state.phrase} />
             </div>
           </div>
         </div>

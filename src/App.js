@@ -10,8 +10,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      className: "",
-      isLoading: true
+      className: ""
     };
 
     this.handleScrollTop = this.handleScrollTop.bind(this);
@@ -19,10 +18,6 @@ class App extends React.Component {
 
   componentDidMount() {
     window.addEventListener("scroll", this.handleScrollTop, false);
-
-    this.setState(prevState => ({
-      isLoading: !prevState.isLoading
-    }));
   }
 
   componentWillUnmount() {
@@ -44,9 +39,7 @@ class App extends React.Component {
   }
 
   render() {
-    return this.state.isLoading ? (
-      <p>Carregando</p>
-    ) : (
+    return (
       <div className="app">
         <Header className={this.state.className} />
         <Home />
